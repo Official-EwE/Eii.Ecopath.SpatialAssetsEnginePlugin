@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>.net48;net10.0</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <SignAssembly>True</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <AssemblyOriginatorKeyFile>Eii.Ecopath.SpatialAssetsEnginePlugin.snk</AssemblyOriginatorKeyFile>
+    <PackageId>Eii.Ecopath.SpatialAssetsEnginePlugin</PackageId>
+    <Authors>EII</Authors>
+    <Description>Description of the package</Description>
+    <Title>Eii.Ecopath.SpatialAssetsEnginePlugin</Title>
+    <PackageProjectUrl>https://github.com/Official-EwE/Eii.Ecopath.SpatialAssetsEnginePlugin</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Official-EwE/Eii.Ecopath.SpatialAssetsEnginePlugin</RepositoryUrl>
+    <PackageReleaseNotes>Initial version</PackageReleaseNotes>
+    <PackageLicenseExpression>EUPL-1.2-or-later</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <IncludeSymbols>True</IncludeSymbols>
+    <Company>EII</Company>
+    <PackageIcon>EII_plain_128x128.png</PackageIcon>
+    <RootNamespace>Eii.Ecopath.SpatialAssetsEnginePlugin</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="True" PackagePath="\" />
+    <None Include="..\EII_plain_128x128.png" Pack="True" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Eii.Ecopath.EwECore" Version="6.7.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

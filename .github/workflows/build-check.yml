@@ -1,0 +1,13 @@
+name: Build Check
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Use custom NuGet build check action
+        uses: Official-EwE/Eii.GithubActions/BuildCheckWindows@master

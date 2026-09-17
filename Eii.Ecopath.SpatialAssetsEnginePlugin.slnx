@@ -1,0 +1,18 @@
+<Solution>
+  <Folder Name="/solution items/">
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="EII_plain_128x128.png" />
+    <File Path="LICENSE.txt" />
+    <File Path="NuGet.config" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/solution items/.github/">
+    <File Path=".github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/solution items/.github/workflows/">
+    <File Path=".github/workflows/build-check.yml" />
+    <File Path=".github/workflows/release-nuget.yml" />
+  </Folder>
+  <Project Path="Eii.Ecopath.SpatialAssetsEnginePlugin/Eii.Ecopath.SpatialAssetsEnginePlugin.vbproj" />
+</Solution>
