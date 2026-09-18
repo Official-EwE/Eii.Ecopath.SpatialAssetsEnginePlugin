@@ -18,7 +18,7 @@
     <IncludeSymbols>True</IncludeSymbols>
     <Company>EII</Company>
     <PackageIcon>EII_plain_128x128.png</PackageIcon>
-    <RootNamespace>Eii.Ecopath.SpatialAssetsEnginePlugin</RootNamespace>
+    <RootNamespace>SpatialAssetsEnginePlugin</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\README.md" Pack="True" PackagePath="\" />
