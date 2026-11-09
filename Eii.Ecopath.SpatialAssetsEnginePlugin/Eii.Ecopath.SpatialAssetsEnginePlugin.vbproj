@@ -23,6 +23,7 @@
   <ItemGroup>
     <None Include="..\README.md" Pack="True" PackagePath="\" />
     <None Include="..\EII_plain_128x128.png" Pack="True" PackagePath="\" />
+    <None Include="Eii.Ecopath.SpatialAssetsEnginePlugin.targets" Pack="True" PackagePath="build\;buildTransitive\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Eii.Ecopath.EwECore" Version="6.7.*" />
