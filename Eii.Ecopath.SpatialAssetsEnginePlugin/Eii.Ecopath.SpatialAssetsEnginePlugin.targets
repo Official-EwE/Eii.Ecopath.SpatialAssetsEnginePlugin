@@ -1,0 +1,20 @@
+<Project>
+  <Target Name="SetSpatialAssetsEnginePluginBuildDestination"
+          AfterTargets="ResolveReferences">
+    <ItemGroup>
+      <ReferenceCopyLocalPaths Update="@(ReferenceCopyLocalPaths)"
+                               Condition="'%(ReferenceCopyLocalPaths.Filename)' == 'Eii.Ecopath.SpatialAssetsEnginePlugin'">
+        <DestinationSubDirectory>Plugins\SpatialAssetsEnginePlugin\</DestinationSubDirectory>
+      </ReferenceCopyLocalPaths>
+    </ItemGroup>
+  </Target>
+  <Target Name="SetSpatialAssetsEnginePluginPublishDestination"
+          AfterTargets="ComputeResolvedFilesToPublishList">
+    <ItemGroup>
+      <ResolvedFileToPublish Update="@(ResolvedFileToPublish)"
+                             Condition="'%(ResolvedFileToPublish.Filename)' == 'Eii.Ecopath.SpatialAssetsEnginePlugin'">
+        <RelativePath>Plugins\SpatialAssetsEnginePlugin\%(ResolvedFileToPublish.Filename)%(ResolvedFileToPublish.Extension)</RelativePath>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+</Project>
